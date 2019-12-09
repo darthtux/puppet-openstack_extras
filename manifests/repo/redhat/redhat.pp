@@ -118,7 +118,7 @@ class openstack_extras::repo::redhat::redhat(
   if $manage_virt {
     $virt_hash = {
       'rdo-qemu-ev' => {
-        'baseurl'  => "${centos_mirror_url}/centos/7/virt/\$basearch/kvm-common/",
+        'baseurl'  => "${centos_mirror_url}/centos/7.6.1810/virt/\$basearch/kvm-common/",
         'descr'    => 'RDO CentOS-7 - QEMU EV',
         'gpgkey'   => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Virtualization',
       }
