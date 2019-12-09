@@ -100,7 +100,7 @@ class openstack_extras::repo::redhat::redhat(
 
     $rdo_hash = {
       'rdo-release' => {
-        'baseurl'  => "${centos_mirror_url}/centos/7/cloud/\$basearch/openstack-${release}/",
+        'baseurl'  => "${centos_mirror_url}/centos/7.6.1810/cloud/\$basearch/openstack-${release}/",
         'descr'    => "OpenStack ${release_cap} Repository",
         'gpgkey'   => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud',
       }
